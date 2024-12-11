@@ -1,0 +1,22 @@
+// Step 1: Declare a global variable age
+let age = 21;
+
+// Step 2: Create the displayAge function
+function displayAge() {
+  console.log(`The current age is: ${age}`);
+}
+
+// Step 3: Create the changeAge function
+function changeAge(newAge) {
+  age = newAge;  // Updates the global age variable
+  console.log(`The age has been updated to: ${age}`);
+}
+
+// Step 4: Call displayAge to show the initial value of age
+displayAge();  // Expected output: The current age is: 25
+
+// Call changeAge to update the global age variable
+changeAge(22);  // Expected output: The age has been updated to: 30
+
+// Call displayAge again to show the updated value of age
+displayAge();  // Expected output: The current age is: 30
